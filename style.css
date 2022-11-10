@@ -1,7 +1,7 @@
 header, footer{
 	position:static;
 	text-align:right;
-	background: url('images/codeBackground.png')50px;
+	background: url('codeBackground.png')50px;
 	color:lightslategrey; 
 	border-radius: 9px;
 	}
@@ -56,7 +56,7 @@ li a:hover{
 	 }
 
 #education{
-	background: url('images/Rhode_Island_College_(logo).png')fixed;
+	background: url('Rhode_Island_College_(logo).png')fixed;
   	animation: bottomToTop 40s linear infinite; 
 	background-repeat:repeat-x;	
 }
@@ -67,11 +67,11 @@ li a:hover{
 }
 
 #experience{
-	background: url('images/Abate_Photo.jpg')fixed;
+	background: url('Abate_Photo.jpg')fixed;
 }
 
 #goals{
-	background: url('images/Blockchain_Photo.jpg')fixed center;
+	background: url('Blockchain_Photo.jpg')fixed center;
 	background-repeat:no-repeat;
 	animation: rightToLeft 35s linear infinite;
 }
@@ -81,7 +81,7 @@ li a:hover{
 }
 
 #languages{
-	background: url('images/Code_Photo.jpg')fixed center;
+	background: url('Code_Photo.jpg')fixed center;
 	animation: topToBottom 50s linear infinite;
 }
 @keyframes topToBottom {
@@ -90,12 +90,12 @@ li a:hover{
 }
 
 #provbeats{
-	background: url('images/Booth_Photo.jpg')fixed center;
+	background: url('Booth_Photo.jpg')fixed center;
 	animation: bottomToTop 7s linear infinite;
 	
 }
 #softskills{
-	background: url('images/Heart_Photo.png')fixed center;
+	background: url('Heart_Photo.png')fixed center;
 	animation: bottomToTop 10s linear infinite;
 	background-repeat: repeat-x
 }
