@@ -151,7 +151,7 @@ article {
     
 /*end of 480px media query*/
 		
-@media screen and (min-width: 600px){
+@media screen and (min-width: 769px){
     .grid-container{
 	grid-auto-rows: minmax(300px, auto);  
 	grid-template-columns: repeat(2, 3fr);
