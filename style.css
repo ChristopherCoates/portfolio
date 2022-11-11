@@ -1,7 +1,7 @@
 header, footer{
 	position:static;
 	text-align:right;
-	background: url('codeBackground.png')50px;
+	background: url('codeBackground.jpg')50px;
 	color:lightslategrey; 
 	border-radius: 9px;
 	}
@@ -95,7 +95,7 @@ li a:hover{
 	
 }
 #softskills{
-	background: url('Heart_Photo.png')fixed center;
+	background: url('Heart_Photo.jpg')fixed center;
 	animation: bottomToTop 10s linear infinite;
 	background-repeat: repeat-x
 }
