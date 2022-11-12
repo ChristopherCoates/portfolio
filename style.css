@@ -93,14 +93,15 @@ li a:hover{
 }
 
 #provbeats{
-	background: url('Booth_Photo.jpg')fixed center;
+	background: url('Booth_Photo.jpg')fixed;
+	
 	
 	
 }
 #softskills{
 	background: url('Heart_Photo.jpg')fixed center;
 	animation: bottomToTop 10s linear infinite;
-	background-repeat: repeat-x
+	background-repeat: repeat-x;
 }
 
 
