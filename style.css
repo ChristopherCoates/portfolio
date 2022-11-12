@@ -75,7 +75,7 @@ li a:hover{
 
 #goals{
 	background: url('Blockchain_Photo.jpg')fixed center;
-	background-repeat:no-repeat;
+	background-repeat:repeat-y;
 	animation: rightToLeft 35s linear infinite;
 }
 @keyframes rightToLeft {
