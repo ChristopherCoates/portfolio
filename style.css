@@ -1,7 +1,7 @@
 header, footer{
 	position:static;
 	text-align:right;
-	background: url('codeBackground.jpg')50px;
+	background: url('CodeHeader_Photo.jpg')50px;
 	color:lightslategrey; 
 	border-radius: 9px;
 	}
@@ -56,7 +56,7 @@ li a:hover{
 	 }
 
 #education{
-	background: url('Rhode_Island_College_(logo).png')fixed;
+	background: url('RICLogo_Photo.png')fixed;
   	animation: bottomToTop 40s linear infinite; 
 	background-repeat:repeat-x;	
 }
@@ -81,7 +81,7 @@ li a:hover{
 }
 
 #languages{
-	background: url('Code_Photo.jpg')fixed center;
+	background: url('CodeArticle_Photo.jpg')fixed center;
 	animation: topToBottom 50s linear infinite;
 }
 @keyframes topToBottom {
