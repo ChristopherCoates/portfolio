@@ -59,7 +59,7 @@ li a:hover{
 	 }
 
 #education{
-	background: url('RICLogo_Photo.png')fixed;
+	background: url('RICLogo_Photo.jpg')fixed;
   	animation: bottomToTop 40s linear infinite; 
 	background-repeat:repeat-x;	
 }
