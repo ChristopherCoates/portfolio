@@ -1,15 +1,17 @@
-header, footer{
+header{
 	position:static;
 	text-align:right;
 	background: url('CodeHeader_Photo.jpg')50px;
-	color:lightslategrey; 
+	color:white; 
 	border-radius: 9px;
 	}
 body{
 	background-color:black;
 }
 footer{
-	background-color: red;
+	position:static; 
+	border-radius: 9px;
+	background-color: lightslategrey;
 	text-align:center;
 	color:white; 
 	}
