@@ -35,7 +35,7 @@ nav li a {
 	color:white;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida   Sans", "DejaVu Sans", Verdana, "sans-serif";
 	text-decoration:none;
-      	float: center;
+      	float:center;
 	}
 
 .navlist{
@@ -154,12 +154,12 @@ article p {
 		color:white;
 		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida   Sans", "DejaVu Sans", Verdana, "sans-serif";
 		text-decoration:none;
-      		float:left;
+      		float:center;
 	}
 	.navlist{
 		display:inline-block; 
 		width:100px; 
-		text-align:left; 
+		text-align:center; 
 		margin:10px;
 	}
 	li a:hover{
