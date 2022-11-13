@@ -154,7 +154,7 @@ article p {
 		color:white;
 		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida   Sans", "DejaVu Sans", Verdana, "sans-serif";
 		text-decoration:none;
-      	float: center;
+      		float:left;
 	}
 	.navlist{
 		display:inline-block; 
