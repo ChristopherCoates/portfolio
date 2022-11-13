@@ -1,0 +1,236 @@
+header{
+	position:static;
+	text-align:right;
+	background: url('code-header-image.jpg')fixed;
+	
+	color:white; 
+	border-radius: 9px;
+	}
+body{
+	background-color:black;
+}
+footer{
+	position:static;
+	background-color:lightslategrey; 
+	border-radius: 9px;
+	text-align:center;
+	color:white; 
+	}
+
+header img {
+	width:200px;
+	height:200px;
+	margin-bottom:-62px;
+      }
+
+nav { 
+	background-color:lightslategrey;
+	height:45px;
+	border-radius:9px;
+	text-color:white;
+	text-decoration:none;
+	}
+
+nav li a {
+	color:white;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida   Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-decoration:none;
+      float: center;
+	}
+
+.navlist{
+	display:inline-block; 
+	width:150px; 
+	text-align:center; 
+	margin:10px;
+	}
+
+li a:hover{
+	color:#E8B46A;
+	font-weight: bold;
+	}
+a{
+	color:#2196F3;
+	font-weight: bold;
+	}
+a:hover{
+	color:#E8B46A;
+	font-weight: bold;
+	}
+a:visited{color:white;}
+
+.grid-container {
+	 display:grid;
+	 grid-template-columns: repeat(3, 4fr);
+	 
+	 }
+
+#education{
+	background: url('grad-image.jpg')fixed; 
+	
+		
+}
+  
+@keyframes bottomToTop {
+  from {background-position: bottom;}
+  to {background-position: top;}
+}
+
+#experience{
+	background: url('abate-image.jpg')fixed;
+}
+
+#projects{
+	background: url('blockchain-image.jpg')fixed center;
+	background-repeat:repeat-y;
+	animation: rightToLeft 35s linear infinite;
+}
+
+@keyframes rightToLeft {
+  from {background-position: right;}
+  to {background-position: left;}
+}
+
+#languages{
+	background: url('code-article-image.jpg')fixed center;
+	animation: bottomToTop 50s linear infinite;
+}
+@keyframes topToBottom {
+  from {background-position: top;}
+  to {background-position: bottom;}
+}
+
+#provbeats{
+	background: url('provbeats-logo-image.jpg') center;
+	animation: topToBottom 40s linear infinite;
+	background-repeat: repeat-x;
+			
+}
+
+
+#softskills{
+	background: url('hearts-image.jpg')fixed center;
+	animation: breath .5s linear infinite;
+	background-repeat: repeat-x;
+}
+@keyframes breath {
+  0%   { background-size: 100% auto; }
+  50% { background-size: 102% auto; }
+  100% { background-size: 100% auto; }
+}
+
+article {
+	color: white;
+	margin: 25px;
+	align-content: center;
+  	padding: 10px;
+	padding-bottom: 10px;
+  	width: 85%;
+ 	height: 90%;
+	border: thin solid lightslategrey;
+	box-shadow: 3px 3px lightslategrey; 
+	border-radius: 9px;   
+	}
+	
+article p {
+	font-size: 1.2em;
+}	
+
+@media screen and (min-width: 320px){
+    .grid-container{
+		grid-auto-rows: minmax(300px, auto);  
+		grid-template-columns: repeat(1, 3fr);
+      	flex-direction: column;
+	}
+	nav { 
+		background-color:lightslategrey;
+		height:45px;
+		border-radius:9px;
+		text-color:white;
+		text-decoration:none;
+	}
+	nav li a {
+		color:white;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida   Sans", "DejaVu Sans", Verdana, "sans-serif";
+		text-decoration:none;
+      	float: center;
+	}
+	.navlist{
+		display:inline-block; 
+		width:100px; 
+		text-align:center; 
+		margin:10px;
+	}
+	li a:hover{
+		color:#E8B46A;
+		font-weight: bold;
+	}
+		
+}
+
+    
+/*end of 320px media query*/
+		
+@media screen and (min-width: 600px){
+    .grid-container{
+	grid-auto-rows: minmax(300px, auto);  
+	grid-template-columns: repeat(2, 3fr);
+      flex-direction: column;	
+	}	
+}
+	
+@media screen and (min-width: 1025px){
+    .grid-container{
+	grid-auto-rows: minmax(300px, auto);  
+	grid-template-columns: repeat(3, 3fr);
+      flex-direction: column;	
+	}	
+}
+ 
+/***************skills bars***************/
+.container {
+  height:20px;  
+  border-radius: 9px;
+  margin-bottom:25px;
+  }
+
+.skills {
+  border-radius: 9px;
+  text-align: left;
+  padding-left: 9px;
+  padding-top: 1px; 
+  padding-bottom: 1px; 
+  color: white; 
+  font-weight:bold;
+}
+	
+.java {width: 70%; background-color: lightslategrey;}
+.python {width: 50%; background-color: lightslategrey;}
+.html {width: 70%; background-color: lightslategrey;} 
+.css {width: 60%; background-color: lightslategrey;} 
+.js {width: 35%; background-color: lightslategrey;} 
+.sql {width: 12%; background-color: lightslategrey;} 
+.english {width: 90%; background-color: lightslategrey;}
+.spanish {width: 60%; background-color: lightslategrey;}
+
+.communication {width: 80%; background-color: lightslategrey;}
+.creativity {width: 80%; background-color: lightslategrey;} 
+.criticalThinking {width: 70%; background-color: lightslategrey;} 
+.teamWork {width: 70%; background-color: lightslategrey;} 
+.grit {width: 90%; background-color: lightslategrey;} 
+.empathy {width: 60%; background-color: lightslategrey;}
+
+
+/***************contact page***************/
+fieldset{
+	margin-bottom: 30;
+	margin-right: 600px;
+    }
+
+label{
+       display: inline-block;
+       margin-left:28px;
+       clear: left;
+       width: 260px;
+       text-align: left;
+     }
