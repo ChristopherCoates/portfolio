@@ -1,7 +1,7 @@
 header{
 	position:static;
 	text-align:right;
-	background: url('code-header-image.jpg')fixed;
+	background: url('images/code-header-image.jpg')fixed;
 	
 	color:white; 
 	border-radius: 9px;
@@ -66,7 +66,7 @@ a:visited{color:white;}
 	 }
 
 #education{
-	background: url('grad-image.jpg')fixed; 
+	background: url('images/grad-image.jpg')fixed; 
 	
 		
 }
@@ -77,11 +77,11 @@ a:visited{color:white;}
 }
 
 #experience{
-	background: url('abate-image.jpg')fixed;
+	background: url('images/abate-image.jpg')fixed;
 }
 
 #projects{
-	background: url('blockchain-image.jpg')fixed center;
+	background: url('images/blockchain-image.jpg')fixed center;
 	background-repeat:repeat-y;
 	animation: rightToLeft 35s linear infinite;
 }
@@ -92,7 +92,7 @@ a:visited{color:white;}
 }
 
 #languages{
-	background: url('code-article-image.jpg')fixed center;
+	background: url('images/code-article-image.jpg')fixed center;
 	animation: bottomToTop 50s linear infinite;
 }
 
@@ -102,7 +102,7 @@ a:visited{color:white;}
 }
 
 #provbeats{
-	background: url('provbeats-logo-image.jpg') center;
+	background: url('images/provbeats-logo-image.jpg') center;
 	animation: topToBottom 40s linear infinite;
 	background-repeat: repeat-x;
 			
@@ -110,7 +110,7 @@ a:visited{color:white;}
 
 
 #softskills{
-	background: url('hearts-image.jpg')fixed center;
+	background: url('images/hearts-image.jpg')fixed center;
 	animation: breath .5s linear infinite;
 	background-repeat: repeat-x;
 }
