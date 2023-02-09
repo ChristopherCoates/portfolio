@@ -73,6 +73,11 @@ a:visited{color:white;}
 	color: white;
   }
 
+.fa-github {
+	background: white;
+	color: #171515;
+  }
+
 .navlist{
 	display:inline-block; 
 	width:150px; 
