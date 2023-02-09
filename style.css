@@ -38,13 +38,6 @@ nav li a {
       	float:center;
 	}
 
-.navlist{
-	display:inline-block; 
-	width:150px; 
-	text-align:center; 
-	margin:10px;
-	}
-
 li a:hover{
 	color:#E8B46A;
 	font-weight: bold;
@@ -60,6 +53,32 @@ a:hover{
 	}
 a:visited{color:white;}
 
+.fa {
+	padding: 7px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+	float:right;
+  }
+  
+.fa:hover {
+	  opacity: 0.7;
+  }
+  
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+  }
+
+.navlist{
+	display:inline-block; 
+	width:150px; 
+	text-align:center; 
+	margin:10px;
+	}
 .grid-container {
 	 display:grid;
 	 grid-template-columns: repeat(3, 4fr);
