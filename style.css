@@ -62,6 +62,7 @@ a:visited{color:white;}
 	margin: 5px 2px;
 	border-radius: 50%;
 	float:right;
+	
   }
   
 .fa:hover {
@@ -72,10 +73,9 @@ a:visited{color:white;}
 	background: #007bb5;
 	color: white;
   }
-
 .fa-github {
 	background: #171515;
-	color:white;
+	color: white;
   }
 
 .navlist{
