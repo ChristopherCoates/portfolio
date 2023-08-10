@@ -1,113 +1,122 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>	
-	<title>Home - chriscoates.dev</title>
+	<title>Home - Chris Coates | Web Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, Machine Learning, and Blockchain.</title>
+
+	<!-- Meta Descriptions -->
+
+	<!--Stops robots from crawling site-->
 	<meta name="robots" content="noindex,nofollow">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Discover Chris Coates' tech portfolio, a computer science graduate skilled in Java, Python, HTML, CSS, JavaScript, and SQL. Passionate about machine learning, blockchain, and full-stack development. Open to job opportunities and collaborations.">
+	<meta name="author" content="Christopher J. Coates Jr.">
+	
+	<!-- Open Graph Descriptions for Facebook and LinkedIn sharing-->
+	<meta property="og:title" content="Chris Coates | Full-Stack Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, Machine Learning, and Blockchain.">
+	<meta property="og:description" content="Discover the tech portfolio of Chris Coates, a creative computer science graduate skilled in full-stack development. Proficient in Java, Python, HTML, CSS, JavaScript, and SQL. Passionate about blockchain, AI, and innovative projects. Open to exciting job opportunities and collaborations.">
+	<meta property="og:image" content="https://media.licdn.com/dms/image/C562DAQGlK90E1N1bfw/profile-treasury-image-shrink_1280_1280/0/1653260990100?e=1690599600&v=beta&t=JY-4IXR2PoUefN8OkEegrKE_G6vNrwCOXUmzfMNfzO0">
+	<meta property="og:url" content="https://www.chriscoates.dev">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Chris Coates | Full-Stack Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, Machine Learning, and Blockchain.">
+	
+	<!-- Twitter Card Descriptions -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Chris Coates | Full-Stack Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, Machine Learning, and Blockchain.">
+	<meta name="twitter:description" content="Explore the tech portfolio of Chris Coates, a creative computer science grad experienced in full-stack development with projects in Java, Python, HTML, CSS, JavaScript, and SQL. Aspiring to innovate in blockchain, machine learning, and investing. Open to exciting opportunities.">
+	<meta name="twitter:image" content="https://media.licdn.com/dms/image/C562DAQGlK90E1N1bfw/profile-treasury-image-shrink_1280_1280/0/1653260990100?e=1690599600&v=beta&t=JY-4IXR2PoUefN8OkEegrKE_G6vNrwCOXUmzfMNfzO0">
+	<meta name="twitter:url" content="https://www.chriscoates.dev">
+	
+	<!-- Stylesheets-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css" type="text/css">
-</head>
+</head>							
 
 <body>
 	
+<!-- The Header contains the Profile Image but the Header background image is added in the stylesheet -->
 <header> 
-	<div id="badgebox">
-		<div class="badges"><a href="https://www.linkedin.com/in/christopherjcoatesjr" class="fa fa-linkedin"></a></div>
-		<div class="badges"><a href="https://github.com/ccoates1375" class="fa fa-github"></a></div>
-	</div>
-	<a href="index.html"><img src="images/profile-image.jpg"alt="Profile Photo"></a>
+	<div class="badges"><a href="https://www.linkedin.com/in/christopherjcoatesjr" class="fa fa-linkedin"></a></div>
+	<div class="badges"><a href="https://github.com/ChristopherCoates" class="fa fa-github"></a></div>
+	<a href="index.html"><img src="images/profile-image.jpg" alt="Photo of web developer Chris Coates"></a>
 	<h1>Christopher J. Coates Jr.</h1>
 </header>
 	
-<nav> 
-	<ul>
+<nav role="navigation">
+	<div id="toggle">
+	  
+	  <input type="checkbox" />
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  
+	  <ul id="menu">
 		<li class="navlist"><a href="index.html">Home</a></li>
 		<li class="navlist"><a href="pages/experience.html">Experience</a></li>
-		<li class="navlist"><a href=mailto:christopherjcoatesjr@gmail.com?subject=Employer/Recruiter">Contact</a></li>
-	</ul>
+	   
+	  </ul>
+	</div>
 </nav>
 	
+<!-- The grid-container class is used to set the grid sections to three columns with equal width that is responsive when window is resized -->
 <main class="grid-container">
 
-
-<article id="education"> 
-	<h1>Education</h1>
+<section id="education"> 
+	<h2>Education</h2>
 	<ul>
-		<li><h4>B.A. in Computer Science</h4></li>
-		<li><h4>Minor in Web Development</h4></li>
-		<li><h4>Rhode Island College Class of 2022</h4></li>
-		<li><h4>Magna Cum Laude</h4></li>
-		<li><h4>Upsilon Pi Epsilon Honor Society</h4></li>
-		<li><h4>Information Security Club and one of the founding members of the Software Engineering Club.</h4></li>
-		<li><h4>Completed the Stanford Online Relational Databases and SQL Certificate through edX.org</h4></li>
-		
-			
+		<li>Rhode Island College Class of 2022</li>
+		<li>B.A. in Computer Science <i>Magna Cum Laude</i></li>
+		<li>Minor in Web Development</li>
+		<li>Upsilon Pi Epsilon Honor Society</li>
+		<li>Information Security Club and one of the founding members of the Software Engineering Club</li>
+		<li>Stanford Online Relational Databases and SQL Certificate through edX.org</li>
 	</ul>
 	
-	<h1>Goals</h1>
-	<p>Excited to learn all that I can about blockchain technology as well as ways to use artificial intelligence, machine learning and automation to better serve the broader community while transitioning into the Web3 future.</p>	
-	<p>Overcoming imposter syndrome as a blockchain enthusiast...</p>	
-</article>
+	<h2>Summary</h2>
 
-<article id="projects"> 
-	<h1>Projects</h1>
-	<ul>
-		<li><h4>Coded a simple blockchain using Java and another in Python for fun and experience.</h4></li>
-		<li><h4>Implemented Agile SCRUM framework for a web-based bookstore application for a Software Engineering team project using SCRUM framework in PHP, SQL, HTML, CSS & JavaScript.</h4></li>
-		<li><h4>Developed a program that visualized various sorting algorithms & their efficiencies in Python.</h4></li>
-		<li><h4>Led a team to develop a <a url(https://ccoates1375.github.io/SHINE.site>website</a> from scratch using HTML, CSS and JS.</h4></li>
-		<li><h4>Trained models using supervised learning algorithms.</h4></li>
-		<li><h4>Completed order calculator GUI(graphical user interface) application in JAVA.</h4></li>   
-	</ul>	
-</article>
+	<p>I'm a recent computer science graduate with a passion for blockchain and AI, constantly learning and staying up to date with the latest advancements in the tech industry. I have a strong background in community organizing, fundraising, team building, and management.</p>
+	<p>My experience includes JAVA, Python, HTML, CSS, JavaScript, UI/UX design, software testing, and content creation. I develop solutions at the intersection of technology and user experience, science, and art.</p>
+	<p>My goal is to become a full-time full-stack developer while continuing to learn blockchain technology and machine learning. I welcome exciting employment opportunities and collaborations.</p>
 
-<article id="languages"> 
+</section>
+
+<section id="projects"> 
+	<h2>Projects</h2>
+
+	<p><b>Coded a Blockchain:</b> Explored the fundamentals of hashing and implemented basic blockchain features in Java and Python.</p>
+	<p><b>Trained AI Models:</b> Gained valuable insights into machine learning principles by developing and training AI models using supervised learning algorithms.</p>
+	<p><b>Agile SCRUM Framework:</b> Led a Software Engineering team in developing a web-based bookstore. Our tech stack included PHP, SQL, HTML, CSS, and JavaScript.</p>
+	<p><b>Established ProvBeats.com:</b> Developed and manage a multi-faceted platform that includes a website, live band, artist community, and recording studio. Demonstrated entrepreneurial spirit, leadership, and expertise in web development, music production, and live performances.</p>
+	<p><b>Algorithm Visualization Program:</b> Designed an interactive program using Python to demonstrate sorting algorithms and analyze their time complexities, providing insights into algorithmic efficiency using Big O notation.</p>
+	<p><b>Web Development Team Leadership:</b> Organized a team of peers to create dynamic and responsive websites from scratch, focusing on user experience and modern design principles using HTML, CSS and JavaScript.</p>
+	
+</section>
+
+<section id="languages"> 
 	<h2>Languages</h2>
 	
-<div class="container">
-  	<div class="skills java">JAVA</div>
-</div>
-
-<div class="container">
+	<div class="skills java">JAVA</div>
 	<div class="skills python">Python</div>
-</div>
-	
-<div class="container">
- 	<div class="skills html">HTML</div>
-</div>
-
-<div class="container">
- 	<div class="skills css">CSS</div>
-</div>
-
-<div class="container">
+	<div class="skills html">HTML</div>
+	<div class="skills css">CSS</div>
 	<div class="skills js">JavaScript</div>
-</div>
-
-<div class="container">
 	<div class="skills sql">SQL</div>
-</div>
-
-<div class="container">
 	<div class="skills english">English</div>
-</div>
-
-<div class="container">
 	<div class="skills spanish">Spanish</div>
-</div>
 	
-</article>
+</section>
 
 </main>	
-		
+	
+<!--The &copy symbol is intentionally used in place of the "C" in "Class of 2022" -->
 <footer>
+	<div class="badges"><a href="https://www.linkedin.com/in/christopherjcoatesjr" class="fa fa-linkedin"></a><a href="https://github.com/ChristopherCoates" class="fa fa-github"></a></div>
+	<i>Designed and coded from scratch using HTML, CSS and JavaScript.</i>
 	<p>
 	&copy;lass of 2022
 	</p>		
 </footer>
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>	
+	
 </body>
 		
 </html>
