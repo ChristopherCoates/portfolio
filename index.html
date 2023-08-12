@@ -5,53 +5,57 @@
 
 	<!-- Meta Descriptions -->
 
-	<!--Stops robots from crawling site-->
-	<meta name="robots" content="noindex,nofollow">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Discover Chris Coates' tech portfolio, a computer science graduate skilled in Java, Python, HTML, CSS, JavaScript, and SQL. Passionate about machine learning, blockchain, and full-stack development. Open to job opportunities and collaborations.">
+	<meta name="description" content="Discover the tech portfolio of Christopher Coates, a computer science graduate with a minor in web development, skilled in Java, Python, HTML, CSS, JavaScript, and SQL. Passionate about machine learning, blockchain, and full-stack development. Open to job opportunities and collaborations.">
 	<meta name="author" content="Christopher J. Coates Jr.">
 	
 	<!-- Open Graph Descriptions for Facebook and LinkedIn sharing-->
-	<meta property="og:title" content="Chris Coates | Full-Stack Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, Machine Learning, and Blockchain.">
-	<meta property="og:description" content="Discover the tech portfolio of Chris Coates, a creative computer science graduate skilled in full-stack development. Proficient in Java, Python, HTML, CSS, JavaScript, and SQL. Passionate about blockchain, AI, and innovative projects. Open to exciting job opportunities and collaborations.">
+	<meta property="og:title" content="Chris Coates | Full-Stack Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, PHP, as well as Google Cloud and AI. Passionate about Machine Learning, and Blockchain.">
+	<meta property="og:description" content="Discover the tech portfolio of Christopher Coates, a creative computer science graduate skilled in full-stack development. Proficient in Java, Python, HTML, CSS, JavaScript, and SQL. Passionate about blockchain, AI, and innovative projects. Open to exciting job opportunities and collaborations.">
 	<meta property="og:image" content="https://media.licdn.com/dms/image/C562DAQGlK90E1N1bfw/profile-treasury-image-shrink_1280_1280/0/1653260990100?e=1690599600&v=beta&t=JY-4IXR2PoUefN8OkEegrKE_G6vNrwCOXUmzfMNfzO0">
 	<meta property="og:url" content="https://www.chriscoates.dev">
 	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Chris Coates | Full-Stack Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, Machine Learning, and Blockchain.">
+	<meta property="og:site_name" content="Chris Coates | Full-Stack Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, PHP and AI. Passionate about Machine Learning, and Blockchain.">
 	
 	<!-- Twitter Card Descriptions -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Chris Coates | Full-Stack Developer | Experienced in Java, Python, HTML, CSS, JavaScript, SQL, Machine Learning, and Blockchain.">
-	<meta name="twitter:description" content="Explore the tech portfolio of Chris Coates, a creative computer science grad experienced in full-stack development with projects in Java, Python, HTML, CSS, JavaScript, and SQL. Aspiring to innovate in blockchain, machine learning, and investing. Open to exciting opportunities.">
+	<meta name="twitter:title" content="Chris Coates | Full-Stack Developer currently seeking employment.">
+	<meta name="twitter:description" content="Creative computer science grad skilled in full-stack development with Java, Python, HTML, CSS, JavaScript, SQL. Passion for blockchain, AI, and innovation.">
 	<meta name="twitter:image" content="https://media.licdn.com/dms/image/C562DAQGlK90E1N1bfw/profile-treasury-image-shrink_1280_1280/0/1653260990100?e=1690599600&v=beta&t=JY-4IXR2PoUefN8OkEegrKE_G6vNrwCOXUmzfMNfzO0">
 	<meta name="twitter:url" content="https://www.chriscoates.dev">
 	
+	<!--Preloads images above the fold-->
+	<link rel="preload" as="image" href="images\profile-image.webp">
+	<link rel="preload" as="image" href="images\grad-image.webp">
+
 	<!-- Stylesheets-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css" type="text/css">
+	
 </head>							
 
 <body>
 	
 <!-- The Header contains the Profile Image but the Header background image is added in the stylesheet -->
 <header> 
-	<div class="badges"><a href="https://www.linkedin.com/in/christopherjcoatesjr" class="fa fa-linkedin"></a></div>
-	<div class="badges"><a href="https://github.com/ChristopherCoates" class="fa fa-github"></a></div>
-	<a href="index.html"><img src="images/profile-image.jpg" alt="Photo of web developer Chris Coates"></a>
+	<div><a href="https://www.linkedin.com/in/christopherjcoatesjr" class="icon icon-linkedin" aria-label="LinkedIn Profile"></a><a href="https://github.com/ChristopherCoates" class="icon icon-github" aria-label="GitHub Repository"></a></div>
+	<a href="index.html"><img src="images/profile-image.webp" alt="Photo of web developer Chris Coates"></a>
 	<h1>Christopher J. Coates Jr.</h1>
 </header>
 	
 <nav role="navigation">
 	<div id="toggle">
 	  
-	  <input type="checkbox" />
+	  <label for="menuCheckbox" id="menuLabel" aria-label="Toggle Menu" role="button"></label>
+	  
+	  <input type="checkbox" id="menuCheckbox" aria-label="Toggle Menu">
+
 	  <span></span>
 	  <span></span>
 	  <span></span>
 	  
 	  <ul id="menu">
-		<li class="navlist"><a href="index.html">Home</a></li>
+		<li class="navlist"><a href="../index.html">Home</a></li>
 		<li class="navlist"><a href="pages/experience.html">Experience</a></li>
 	   
 	  </ul>
@@ -110,11 +114,9 @@
 	
 <!--The &copy symbol is intentionally used in place of the "C" in "Class of 2022" -->
 <footer>
-	<div class="badges"><a href="https://www.linkedin.com/in/christopherjcoatesjr" class="fa fa-linkedin"></a><a href="https://github.com/ChristopherCoates" class="fa fa-github"></a></div>
+	<div><a href="https://www.linkedin.com/in/christopherjcoatesjr" class="icon icon-linkedin" aria-label="LinkedIn Profile"></a><a href="https://github.com/ChristopherCoates" class="icon icon-github" aria-label="GitHub Repository"></a></div>
 	<i>Designed and coded from scratch using HTML, CSS and JavaScript.</i>
-	<p>
-	&copy;lass of 2022
-	</p>		
+	<p>&copy;lass of 2022</p>		
 </footer>
 	
 </body>
