@@ -1,47 +1,48 @@
-/*Styles the Background image not the Profile Picture */
+
 header{
 	position:static;
 	text-align:right;
-	background: url('images/code-header-image.jpg')fixed;
-	background-repeat:no-repeat;
 	color:white; 
 	margin-top:-7px;
 }
 
-/* Styles the Profile Picture not the background */
 header img {
-	width:190px;
-	height:190px;
-	margin-bottom:-64px;
+	max-width: 180px; /* Ensures the image doesn't exceed its container's width */
+	height: auto; /* Maintains the image's aspect ratio */
+	margin-bottom:-100px;
 }
 
-/* Font Awesome icons in the Header */
-.fa {
-	padding: 7px;
-	font-size: 25px;
-	width:22px;
-	text-decoration: none;
-	margin: 10px;
-	border-radius: 50%;
+header h1 {
+	margin:10px;
+	font-size: 1.7em;
+}
+
+/* Styles the social icons(gitHub and LinkedIn)*/
+.icon {
+	padding:8px;
+	margin:10px;
+	border-radius:11%;
 	float:right;
-}
-
-.fa:hover {
-	  opacity: 0.7;
+	width: 25px;
+    height: 25px;
+	
 }
   
-.fa-linkedin {
+.icon-linkedin {
 	background: #007bb5;
-	color: white;
+    background-image: url('../images/linkedin.svg');
+	background-repeat: no-repeat;
+    background-size: 94%;
+	background-position: center;	
+
 }
 
-.fa-github {
+.icon-github {
 	background:white;
-	color: black;
-}
-
-h1, h2 {
-	font-family: 'merryweather', serif;
+    background-image: url('../images/github.svg');
+    background-repeat: no-repeat;
+    background-size: 94%;
+	background-position: center;
 }
 
 body{
@@ -50,103 +51,86 @@ body{
 	color: white;
 }
 
-/* Styles the grey Nav Bar */
-nav { 
-	background-color:lightslategray;
-	height:30px;
-	border-radius: 10px;
-}
-
-/* Styles the Nav Menu */
+/* Styles the custom hamburger container */
 #toggle {
 	display: block;
 	position: absolute;
-	top: 215px;
-	left: 50px;
+	top: 19px;
+	left: 30px;
 	z-index: 1;
-	-webkit-user-select: none;
-	user-select: none;
 }
 
-#toggle a {
-	text-decoration: none;
-	color: black;
-	transition: color 0.2s ease;
-}
-
-#toggle a:hover {
-	color: #E8B46A;;
-}
-
+/* Styles the input element that toggles the menu*/
 #toggle input {
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 48px;
+	height: 48px;
 	position: absolute;
 	left: -5px;
 	cursor: pointer;
 	opacity: 0;
 	z-index: 2;
-	-webkit-touch-callout: none;
 }
 
+/* Styles the three lines that make up the hamburger icon */
 #toggle span {
 	display: block;
-	width: 30px;
+	width: 25px;
 	height: 3px;
-	margin-bottom: 6px;
+	margin-bottom: 5px;
 	position: relative;
-	background: lightgrey;
+	background: white;
 	border-radius: 7px;
 	z-index: 1;
+	border: thin solid lightslategrey;
+	box-shadow: 2px 1px lightslategrey;
 	transform-origin: 0px 0px;
-	transition: transform 0.5s cubic-bezier(1.0, 0.125, 0.05, 10.0),
-	background 0.5s cubic-bezier(1.0, 0.125, 0.05, 10.0),
-				opacity 0.55s ease;
+	transition: transform 0.5s cubic-bezier(1.0, 0.125, 0.05, 10.0);
+	background: 0.5s cubic-bezier(1.0, 0.125, 0.05, 10.0);
 }
 
+/* Styles the hamburger to spin into an 'X' when clicked */
 #toggle span:first-child {
 	transform-origin: 0% 0%;
 }
-
 #toggle span:nth-last-child(2) {
 	transform-origin: 0% 100%;
 }
-
 #toggle input:checked ~ span {
-	opacity: 1;
-	transform: rotate(45deg) translate(-2px, -1px);
+	transform: rotate(45deg) translate(-1px, 0px);
 	background: lightslategray;
 }
-
 #toggle input:checked ~ span:nth-last-child(3) {
 	opacity: 0;
 	transform: rotate(0deg) scale(0.2, 0.2);
 }
-
 #toggle input:checked ~ span:nth-last-child(2) {
 	transform: rotate(-45deg) translate(0, -1px);
 }
 
+/* Styles the container that holds the nav links */
 #menu {
-	position: absolute; /*prevents menu from covering links*/
-	margin: -50px 0 0 -50px;
-	padding: 50px;
-	padding-top: 80px;
+	position: absolute; /* prevents menu from covering link on Experience page */
+	margin: -50px 0 0 -52px;
+	padding: 30px;
+	padding-top: 60px;
 	border-radius: 9px;
-	background: lightgrey;
-	background opacity: 0.9;
+	background: #000000;
 	list-style-type: none;
 	transform: translate(-100%, 0);
-	transition: transform 0.5s cubic-bezier(1.0, 0.2, 0.05, 1.0);
+	transition: 0.5s cubic-bezier(1.0, 0.2, 0.05, 1.0);
+	border: thin solid lightslategrey;
+	box-shadow: 3px 3px lightslategrey;
 }
 
+/* Opens the menu when clicked */
 #toggle input:checked ~ ul {
 	transform: none;
 }
-  
+
 a{
 	color:white;
+	text-decoration:none;
 }
 
 /* Styles the links gold and makes them shrink when hovered over */
@@ -155,7 +139,7 @@ a:hover{
 	font-weight: lighter;
 }
 
-/*Styles only the list items in the Education section */
+/* Styles only the list items in the Education section */
 li{
 	width:100%; 
 	margin:8px;
@@ -189,11 +173,11 @@ footer {
 }
 
 #education{
-	background: url('images/grad-image.jpg')fixed; 
+	background: url('images/grad-image.webp')fixed; 
 }
 
 #projects{
-	background: url('images/blockchain-image.jpg')fixed center;
+	background: url('images/blockchain-image.webp')fixed center;
 	background-repeat:repeat-y;
 	animation: rightToLeft 35s linear infinite;
 }
@@ -205,7 +189,7 @@ footer {
 }
 
 #languages{
-	background: url('images/code-article-image.jpg')fixed center;
+	background: url('images/code-image.webp')fixed center;
 	animation: bottomToTop 50s linear infinite;
 }
 
@@ -215,14 +199,14 @@ footer {
  	 to {background-position: top;}
 }
 
-/*Styles the background images for the Experience page */
+/* Styles the background images for the Experience page */
 #experience{
-	background: url('images/abate-image.jpg')fixed;
+	background: url('images/abate-image.webp')fixed;
 	
 }
 
 #provbeats{
-	background: url('images/provbeats-logo-image.jpg') center;
+	background: url('images/provbeats-image.webp') center;
 	animation: topToBottom 40s linear infinite;
 	background-repeat: repeat-x;			
 }
@@ -234,7 +218,7 @@ footer {
 }
 
 #softskills{
-	background: url('images/hearts-image.jpg')fixed center;
+	background: url('images/hearts-image.webp')fixed center;
 	animation: breath .5s linear infinite;
 	background-repeat: repeat-x;
 }
@@ -246,7 +230,7 @@ footer {
   100% { background-size: 100% auto; }
 }
 	
-/*******Skills Bars for Languages and Soft Skills sections*******/
+/* Skills Bars for Languages and Soft Skills sections */
 .skills {
 	height:20px;  
 	border-radius: 20px;
@@ -256,7 +240,7 @@ footer {
 	padding-bottom: 10px; 
 	color: white; 
 	font-weight:bold;
-	background-color: lightslategrey;
+	background-color: #007bb5;
 	margin-bottom:25px;
 }
 	
@@ -266,7 +250,7 @@ footer {
 .html {width: 70%;} 
 .css {width: 60%;} 
 .js {width: 35%;} 
-.sql {width: 13%;} 
+.sql {width: 15%;} 
 .english {width: 90%;}
 .spanish {width: 60%;}
 /* Soft Skills Section on Experience page */
@@ -277,7 +261,7 @@ footer {
 .grit {width: 90%;} 
 .empathy {width: 60%;}
 
-/*******Media queries for responsive layout on all devices*******/
+/* Media queries for responsive layout on all devices */
 
 /* Vertical on screens with a minimum width of 280px */
 @media screen and (min-width: 280px){
