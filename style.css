@@ -173,7 +173,8 @@ footer {
 }
 
 #education{
-	background: url('images/grad-image.webp')fixed; 
+	background: url('images/grad-image.webp')fixed;
+	background-repeat:none;
 }
 
 #projects{
