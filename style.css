@@ -9,7 +9,7 @@ header{
 header img {
 	max-width: 180px; /* Ensures the image doesn't exceed its container's width */
 	height: auto; /* Maintains the image's aspect ratio */
-	margin-bottom:-100px;
+	margin-bottom:-92px;
 }
 
 header h1 {
@@ -174,7 +174,8 @@ footer {
 
 #education{
 	background: url('images/grad-image.webp')fixed;
-	background-repeat:none;
+	background-repeat:no-repeat;
+	background-size:33.3%
 }
 
 #projects{
@@ -271,6 +272,11 @@ footer {
 	grid-template-columns: repeat(1, 3fr);
       	
 	}	
+	#education{
+		background: url('images/grad-image.webp')fixed;
+		background-repeat:no-repeat;
+		background-size:100%
+	}
 }
 
 /* Sets layout in rows of 2 on screens with a minimum width of 600px */		
@@ -280,6 +286,11 @@ footer {
 	grid-template-columns: repeat(2, 3fr);
 	
 	}	
+	#education{
+		background: url('images/grad-image.webp')fixed;
+		background-repeat:no-repeat;
+		background-size:50%
+	}
 }
 
 /* Horizontal layout on screens with a minimum width of 1025px */	
@@ -289,4 +300,9 @@ footer {
 	grid-template-columns: repeat(3, 3fr);
 	
 	}	
+	#education{
+		background: url('images/grad-image.webp')fixed;
+		background-repeat:no-repeat;
+		background-size:33.3%
+	}
 }
