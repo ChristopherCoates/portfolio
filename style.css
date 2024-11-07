@@ -1,308 +1,334 @@
-
-header{
-	position:static;
-	text-align:right;
-	color:white; 
-	margin-top:-7px;
+header {
+    position: static;
+    text-align: right;
+    color: white;
+    margin-top: -7px;
 }
 
 header img {
-	max-width: 180px; /* Ensures the image doesn't exceed its container's width */
-	height: auto; /* Maintains the image's aspect ratio */
-	margin-bottom:-92px;
+    max-width: 180px; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Maintains the image's aspect ratio */
+    margin-bottom: -92px;
 }
 
 header h1 {
-	margin:10px;
-	font-size: 1.7em;
+    margin: 10px;
+    font-size: 1.7em;
 }
 
 /* Styles the social icons(gitHub and LinkedIn)*/
 .icon {
-	padding:8px;
-	margin:10px;
-	border-radius:11%;
-	float:right;
-	width: 25px;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 11%;
+    float: right;
+    width: 25px;
     height: 25px;
-	
 }
-  
-.icon-linkedin {
-	background: #007bb5;
-    background-image: url('../images/linkedin.svg');
-	background-repeat: no-repeat;
-    background-size: 94%;
-	background-position: center;	
 
+.icon-linkedin {
+    background: #007bb5;
+    background-image: url('../images/linkedin.svg');
+    background-repeat: no-repeat;
+    background-size: 94%;
+    background-position: center;
 }
 
 .icon-github {
-	background:white;
+    background: white;
     background-image: url('../images/github.svg');
     background-repeat: no-repeat;
     background-size: 94%;
-	background-position: center;
+    background-position: center;
 }
 
-body{
-	font-family: "Roboto", Arial, sans-serif;
-	background-color:black;
-	color: white;
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: black;
+    color: white;
 }
 
 /* Styles the custom hamburger container */
 #toggle {
-	display: block;
-	position: absolute;
-	top: 19px;
-	left: 30px;
-	z-index: 1;
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 30px;
+    z-index: 1;
 }
 
 /* Styles the input element that toggles the menu*/
 #toggle input {
-	display: block;
-	width: 48px;
-	height: 48px;
-	position: absolute;
-	left: -5px;
-	cursor: pointer;
-	opacity: 0;
-	z-index: 2;
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
 }
 
 /* Styles the three lines that make up the hamburger icon */
 #toggle span {
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin-bottom: 5px;
-	position: relative;
-	background: white;
-	border-radius: 7px;
-	z-index: 1;
-	border: thin solid lightslategrey;
-	box-shadow: 2px 1px lightslategrey;
-	transform-origin: 0px 0px;
-	transition: transform 0.5s cubic-bezier(1.0, 0.125, 0.05, 10.0);
-	background: 0.5s cubic-bezier(1.0, 0.125, 0.05, 10.0);
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: white;
+    border-radius: 7px;
+    z-index: 1;
+    border: thin solid lightslategrey;
+    box-shadow: 2px 1px lightslategrey;
+    transform-origin: 0px 0px;
+    transition: transform 0.5s cubic-bezier(1.0, 0.125, 0.05, 10.0);
+    background: 0.5s cubic-bezier(1.0, 0.125, 0.05, 10.0);
 }
 
 /* Styles the hamburger to spin into an 'X' when clicked */
 #toggle span:first-child {
-	transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
 }
 #toggle span:nth-last-child(2) {
-	transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
 }
 #toggle input:checked ~ span {
-	transform: rotate(45deg) translate(-1px, 0px);
-	background: lightslategray;
+    transform: rotate(45deg) translate(-1px, 0px);
+    background: lightslategray;
 }
 #toggle input:checked ~ span:nth-last-child(3) {
-	opacity: 0;
-	transform: rotate(0deg) scale(0.2, 0.2);
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 #toggle input:checked ~ span:nth-last-child(2) {
-	transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(0, -1px);
 }
 
 /* Styles the container that holds the nav links */
 #menu {
-	position: absolute; /* prevents menu from covering link on Experience page */
-	margin: -50px 0 0 -52px;
-	padding: 30px;
-	padding-top: 60px;
-	border-radius: 9px;
-	background: #000000;
-	list-style-type: none;
-	transform: translate(-100%, 0);
-	transition: 0.5s cubic-bezier(1.0, 0.2, 0.05, 1.0);
-	border: thin solid lightslategrey;
-	box-shadow: 3px 3px lightslategrey;
+    position: absolute; /* prevents menu from covering link on Projects page */
+    margin: -50px 0 0 -52px;
+    padding: 30px;
+    padding-top: 60px;
+    border-radius: 9px;
+    background: #000000;
+    list-style-type: none;
+    transform: translate(-100%, 0);
+    transition: 0.5s cubic-bezier(1.0, 0.2, 0.05, 1.0);
+    border: thin solid lightslategrey;
+    box-shadow: 3px 3px lightslategrey;
 }
 
 /* Opens the menu when clicked */
 #toggle input:checked ~ ul {
-	transform: none;
+    transform: none;
 }
 
-a{
-	color:white;
-	text-decoration:none;
+a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Styles the links gold and makes them shrink when hovered over */
-a:hover{
-	color:#E8B46A;
-	font-weight: lighter;
+a:hover {
+    color: #E8B46A;
+    font-weight: lighter;
 }
 
 /* Styles only the list items in the Education section */
-li{
-	width:100%; 
-	margin:8px;
-	font-weight:bold;
+li {
+    width: 100%;
+    margin: 8px;
+    
 }
 
 /* Styles for all the section element */
 section {
-	margin: 2%;
-	margin-bottom:10px;
-	align-content: center;
-  	padding: 30px;
-	border: thin solid lightslategrey;
-	box-shadow: 3px 3px lightslategrey; 
-	border-radius: 9px;   
+    margin: 2%;
+    margin-bottom: 10px;
+    align-content: center;
+    padding: 30px;
+    border: thin solid lightslategrey;
+    box-shadow: 3px 3px lightslategrey;
+    border-radius: 9px;
 }
 
 footer {
-	position:static; 
-	text-align:center;
-	color:white; 
-	display:flex;
-    flex-direction:column; /* Stacks the child elements vertically */
-    align-items:center;
+    position: static;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stacks the child elements vertically */
+    align-items: center;
 }
 
- /* Sets the grid template columns to three columns with equal width */
+/* Sets the grid template columns to three columns with equal width */
 .grid-container {
-    display: grid; 
+    display: grid;
     grid-template-columns: repeat(3, 4fr);
 }
 
-#education{
-	background: url('images/grad-image.webp')fixed;
-	background-repeat:no-repeat;
-	background-size:33.3%
+#education {
+    background: url('images/grad-image.webp') fixed;
+    background-repeat: no-repeat;
+    background-size: 33.3%;
+    position: relative; /* Enable positioning for the pseudo-element */
 }
 
-#projects{
-	background: url('images/blockchain-image.webp')fixed center;
-	background-repeat:repeat-y;
-	animation: rightToLeft 35s linear infinite;
+#aboutMe {
+    background: url('images/blockchain-image.webp') fixed center;
+    background-repeat: repeat-y;
+    animation: rightToLeft 35s linear infinite;
+    position: relative; /* Enable positioning for the pseudo-element */
 }
 
 /* Makes the background image in the Project section move from right to left */
 @keyframes rightToLeft {
-  from {background-position: right;}
-  to {background-position: left;}
+    from { background-position: right; }
+    to { background-position: left; }
 }
 
-#languages{
-	background: url('images/code-image.webp')fixed center;
-	animation: bottomToTop 50s linear infinite;
+#languages {
+    background: url('images/code-image.webp') fixed center;
+    animation: bottomToTop 50s linear infinite;
+    position: relative; /* Enable positioning for the pseudo-element */
 }
 
 /* Makes the background image in the Languages section move from bottom to top */
 @keyframes bottomToTop {
- 	 from {background-position: bottom;}
- 	 to {background-position: top;}
+    from { background-position: bottom; }
+    to { background-position: top; }
 }
 
-/* Styles the background images for the Experience page */
-#experience{
-	background: url('images/abate-image.webp')fixed;
-	
+/* Styles the background images for the Projects page */
+#gregabate {
+    background: url('images/abate-image.webp') fixed;
+    position: relative; /* Enable positioning for the pseudo-element */
 }
 
-#provbeats{
-	background: url('images/provbeats-image.webp') center;
-	animation: topToBottom 40s linear infinite;
-	background-repeat: repeat-x;			
+#provbeats {
+    background: url('images/provbeats-image.webp') center;
+    animation: topToBottom 40s linear infinite;
+    background-repeat: repeat-x;
+    position: relative; /* Enable positioning for the pseudo-element */
 }
 
 /* Makes the background image in the ProvBeats section move from top to bottom */
 @keyframes topToBottom {
-  	from {background-position: top;}
- 	to {background-position: bottom;}
+    from { background-position: top; }
+    to { background-position: bottom; }
 }
 
-#softskills{
-	background: url('images/hearts-image.webp')fixed center;
-	animation: breath .5s linear infinite;
-	background-repeat: repeat-x;
+#softskills {
+    background: url('images/hearts-image.webp') fixed center;
+    animation: breath .5s linear infinite;
+    background-repeat: repeat-x;
+    position: relative; /* Enable positioning for the pseudo-element */
 }
 
-/* Makes hearts beat in Soft Skills section on Experience page */
+/* Makes hearts beat in Soft Skills section on Projects page */
 @keyframes breath {
-  0%   { background-size: 100% auto; }
-  50%  { background-size: 102% auto; }
-  100% { background-size: 100% auto; }
+    0% { background-size: 100% auto; }
+    50% { background-size: 102% auto; }
+    100% { background-size: 100% auto; }
 }
-	
+
 /* Skills Bars for Languages and Soft Skills sections */
 .skills {
-	height:20px;  
-	border-radius: 20px;
-	text-align: left;
-	padding-left: 9px;
-	padding-top: 10px; 
-	padding-bottom: 10px; 
-	color: white; 
-	font-weight:bold;
-	background-color: #007bb5;
-	margin-bottom:25px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #007bb5;
+    margin-bottom: 25px;
 }
-	
+
 /* Languages Section on Home page */
-.java {width: 70%;}
-.python {width: 50%;}
-.html {width: 70%;} 
-.css {width: 60%;} 
-.js {width: 35%;} 
-.sql {width: 15%;} 
-.english {width: 90%;}
-.spanish {width: 60%;}
-/* Soft Skills Section on Experience page */
-.communication {width: 80%;}
-.creativity {width: 80%;} 
-.criticalThinking {width: 70%;} 
-.teamWork {width: 70%;} 
-.grit {width: 90%;} 
-.empathy {width: 60%;}
+.java { width: 80%; }
+.python { width: 60%; }
+.html { width: 90%; }
+.css { width: 90%; }
+.js { width: 55%; }
+.sql { width: 25%; }
+.english { width: 90%; }
+.spanish { width: 85%; }
+
+/* Soft Skills Section on Projects page */
+.communication { width: 85%; }
+.problemSolving { width: 80%; }
+.analyticalThinking { width: 70%; }
+.teamwork { width: 99%; }
+.grit { width: 90%; }
+.learning { width: 75%; }
+
+/* Overlay for background dimming effect for better contrast*/
+#education::before,
+#aboutMe::before,
+#languages::before,
+#gregabate::before,
+#provbeats::before,
+#softskills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); /* Overlay opacity */
+    z-index: 1; /* overlay above the background image */
+}
+
+#education > *,
+#aboutMe > *,
+#languages > *,
+#gregabate > *,
+#provbeats > *,
+#softskills > * {
+    position: relative; /* Position child elements above the overlay */
+    z-index: 2; /* Ensure content is above the overlay */
+}
 
 /* Media queries for responsive layout on all devices */
 
 /* Vertical on screens with a minimum width of 280px */
-@media screen and (min-width: 280px){
-    .grid-container{
-		 
-	grid-template-columns: repeat(1, 3fr);
-      	
-	}	
-	#education{
-		background: url('images/grad-image.webp')fixed;
-		background-repeat:no-repeat;
-		background-size:100%
-	}
+@media screen and (min-width: 280px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 3fr);
+    }
+    #education {
+        background: url('images/grad-image.webp') fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 }
 
-/* Sets layout in rows of 2 on screens with a minimum width of 600px */		
-@media screen and (min-width: 600px){
-    .grid-container{  
-	 
-	grid-template-columns: repeat(2, 3fr);
-	
-	}	
-	#education{
-		background: url('images/grad-image.webp')fixed;
-		background-repeat:no-repeat;
-		background-size:50%
-	}
+/* Sets layout in rows of 2 on screens with a minimum width of 600px */
+@media screen and (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 3fr);
+    }
+    #education {
+        background: url('images/grad-image.webp') fixed;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
 }
 
-/* Horizontal layout on screens with a minimum width of 1025px */	
-@media screen and (min-width: 1025px){
-    .grid-container{
-	
-	grid-template-columns: repeat(3, 3fr);
-	
-	}	
-	#education{
-		background: url('images/grad-image.webp')fixed;
-		background-repeat:no-repeat;
-		background-size:33.3%
-	}
+/* Horizontal layout on screens with a minimum width of 1025px */
+@media screen and (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 3fr);
+    }
+    #education {
+        background: url('images/grad-image.webp') fixed;
+        background-repeat: no-repeat;
+        background-size: 33.3%;
+    }
 }
+
+
