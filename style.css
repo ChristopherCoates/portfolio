@@ -25,6 +25,24 @@ header h1 {
     width: 25px;
     height: 25px;
 }
+/* Headline animation */
+@keyframes slideRightToLeft {
+    from {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    to {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+}
+
+/* Apply the animation to the headline */
+#headline {
+    text-align: left;
+    display: inline-block; /* Prevents the text from wrapping */
+    white-space: nowrap; /* Keeps the text in one line */
+    animation: slideRightToLeft 15s linear infinite; /* Adjust duration as needed */
+    
+}
 
 .icon-linkedin {
     background: #007bb5;
@@ -136,7 +154,7 @@ a:hover {
     font-weight: lighter;
 }
 
-/* Styles only the list items in the Education section */
+/* Styles the list items */
 li {
     width: 100%;
     margin: 8px;
@@ -169,14 +187,16 @@ footer {
     grid-template-columns: repeat(3, 4fr);
 }
 
-#education {
+#aboutme {
+    
     background: url('images/grad-image.webp') fixed;
     background-repeat: no-repeat;
     background-size: 33.3%;
-    position: relative; /* Enable positioning for the pseudo-element */
+    position: relative;  /*Enable positioning for the pseudo-element */
+    
 }
 
-#aboutMe {
+#experience {
     background: url('images/blockchain-image.webp') fixed center;
     background-repeat: repeat-y;
     animation: rightToLeft 35s linear infinite;
@@ -267,8 +287,8 @@ footer {
 .learning { width: 75%; }
 
 /* Overlay for background dimming effect for better contrast*/
-#education::before,
-#aboutMe::before,
+#aboutme::before,
+#experience::before,
 #languages::before,
 #gregabate::before,
 #provbeats::before,
@@ -283,8 +303,8 @@ footer {
     z-index: 1; /* overlay above the background image */
 }
 
-#education > *,
-#aboutMe > *,
+#aboutme > *,
+#experience > *,
 #languages > *,
 #gregabate > *,
 #provbeats > *,
@@ -300,7 +320,7 @@ footer {
     .grid-container {
         grid-template-columns: repeat(1, 3fr);
     }
-    #education {
+    #aboutme {
         background: url('images/grad-image.webp') fixed;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -312,10 +332,10 @@ footer {
     .grid-container {
         grid-template-columns: repeat(2, 3fr);
     }
-    #education {
+    #aboutme {
         background: url('images/grad-image.webp') fixed;
         background-repeat: no-repeat;
-        background-size: 50%;
+        background-size: 100%;
     }
 }
 
@@ -324,10 +344,10 @@ footer {
     .grid-container {
         grid-template-columns: repeat(3, 3fr);
     }
-    #education {
+    #aboutme {
         background: url('images/grad-image.webp') fixed;
         background-repeat: no-repeat;
-        background-size: 33.3%;
+        background-size: 70%;
     }
 }
 
